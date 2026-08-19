@@ -1,34 +1,175 @@
-.pai{
-    border: 2px solid;
-    width: 98%;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina {
+  width: 92%;
+  max-width: 1050px;
+  margin: 35px auto;
+}
+
+.titulo {
+  border-left: 12px solid #ff1f1f;
+  margin-bottom: 20px;
+  padding-left: 16px;
+}
+
+.titulo p {
+  color: #0057ff;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.titulo h1 {
+  color: #111111;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+.container {
+  border: 5px solid #111111;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #ffde17;
+  border-bottom: 5px solid #111111;
+  color: #111111;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  height: 20%;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.principal {
+  height: 70%;
+  display: flex;
+}
+
+aside {
+  background-color: #ff1f6d;
+  border-right: 5px solid #111111;
+  color: #ffffff;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  order: -1;
+  padding-top: 120px;
+  text-align: center;
+  width: 20%;
+}
+
+main {
+  background-color: #0057ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.menu {
+  border: 4px solid #111111;
+  color: #111111;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  height: 80px;
+  margin: 14px;
+  padding-top: 18px;
+  text-align: center;
+  width: 80px;
+}
+
+.menu-um {
+  background-color: #ffde17;
+}
+
+.menu-dois {
+  background-color: #70f537;
+}
+
+.menu-tres {
+  background-color: #ff8a00;
+}
+
+.menu-quatro {
+  background-color: #b83cff;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #1b1b1b;
+  border-top: 5px solid #111111;
+  color: #ffffff;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  height: 10%;
+  letter-spacing: 3px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.legenda {
+  background-color: #ffffff;
+  border: 3px solid #111111;
+  border-top: 0;
+  font-size: 15px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .pagina {
+    width: 94%;
+    margin: 24px auto;
+  }
+
+  .titulo h1 {
+    font-size: 31px;
+  }
+
+  .container {
+    height: 560px;
+  }
+
+  .principal {
     flex-direction: column;
-}
+  }
 
-.filho{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(61, 8, 255);
-    width: 50px;
-    height: 50px;
-    color: white;
-    border: 2px solid;
-}
+  aside {
+    border-bottom: 5px solid #111111;
+    border-right: 0;
+    height: 25%;
+    order: 0;
+    padding-top: 20px;
+    width: 100%;
+  }
 
-.amarela{
-    background-color: yellow;
-    color: black;
-}
+  main {
+    flex-wrap: wrap;
+    height: 75%;
+    width: 100%;
+  }
 
-.laranja{
-    background-color: orange;
-}
-
-.lilas{
-    background-color: blueviolet;
-    order: 2;
+  .menu {
+    height: 68px;
+    margin: 7px;
+    padding-top: 13px;
+    width: 68px;
+  }
 }
