@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d_whats{
+    display: flex;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+.p_whats{
+    border: 4px solid rgb(78, 99, 47);
+    background-color: greenyellow;
+    border-radius: 50px;
+    padding: 10px;
+}
+header{
+    border: 4px solid  blueviolet;
+    background-color: darkseagreen;
+    position: sticky;
+    top: 0;
+}
